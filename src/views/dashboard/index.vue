@@ -1,17 +1,26 @@
 <template>
   <div class="dashboard-container">
     <div class="dashboard-text">name: {{ name }}</div>
-    <Hamburger />
+    <TestTitle />
+
+    <div style="border: 1px solid #ccc;">
+      <p>vue 远程组件</p>
+      <!-- <HelloRemoteVueComp label="hi remote comp" /> -->
+      <RemoteComp name="子应用传入-loaded in codesandbox" />
+    </div>
   </div>
 </template>
 
 <script>
 import { mapGetters } from 'vuex'
-import { Hamburger } from 'lib-zhangbb'
+import { TestTitle } from 'lib-zhangbb-test'
+import comps from 'hel-tpl-remote-vue-comps-demo'
+console.log('comps===>', comps)
 export default {
   name: 'Dashboard',
   components: {
-    Hamburger
+    TestTitle,
+    RemoteComp: comps.App
   },
   computed: {
     ...mapGetters([
