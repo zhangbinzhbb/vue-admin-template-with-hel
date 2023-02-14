@@ -10,8 +10,10 @@ async function main() {
   if (isMasterApp()) {
     // from unpkg by default
     // see https://unpkg.com/hel-tpl-remote-vue-comps@1.1.3/hel_dist/index.html
-    await preFetchLib('lib-zhangbb-test')
-    await preFetchLib('hel-tpl-remote-vue-comps-demo')
+
+    // https://github.com/tnfe/hel/issues/23
+    await preFetchLib('lib-zhangbb-test', { skip404Sniff: true })
+    await preFetchLib('hel-tpl-remote-vue-comps-demo', { skip404Sniff: true })
     // await preFetchLib('lib-zhangbb')
 
     await import('./loadApp')
