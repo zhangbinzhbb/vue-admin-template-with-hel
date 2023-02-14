@@ -1,3 +1,4 @@
+// import { bindVueRuntime } from 'hel-micro'
 import Vue from 'vue'
 
 import 'normalize.css/normalize.css' // A modern alternative to CSS resets
@@ -34,6 +35,8 @@ Vue.use(ElementUI, { locale })
 // Vue.use(ElementUI)
 
 Vue.config.productionTip = false
+
+// bindVueRuntime({ Vue })
 
 new Vue({
   el: '#app',
