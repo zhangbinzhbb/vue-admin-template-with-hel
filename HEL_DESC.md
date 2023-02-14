@@ -2,7 +2,9 @@
 ## 提供方改造
 
 ### 安装相关包
-npm i hel-lib-proxy hel-dev-utils typescript@4.8 rollup@2 rollup-plugin-typescript rollup-plugin-terser shx
+npm i hel-lib-proxy hel-dev-utils typescript@4.8 rollup@2  rollup-plugin-terser shx
+
+rollup-plugin-typescript
 
 ### 下沉入口文件
 将原来的 `src/main.js` 内容复制到 `src/loadApp.js` 里
@@ -39,7 +41,7 @@ npm publish
 export default {
   components: {
     Hamburger: defineAsyncComponent(async () => {
-      const comps = await preFetchLib("lib-zhangbb");
+      const comps = await preFetchLib("lib-zhangbb-test");
       return comps.Hamburger;
     }),
   },
@@ -49,10 +51,10 @@ export default {
 ### 预加载 
 原入口文件下沉，然后加载远程模块，参考 https://github.com/hel-eco/hel-demo-use-remote-vue3-comp/blob/main/src/main.ts
 ```ts
-await preFetchLib('lib-zhangbb')
+await preFetchLib('lib-zhangbb-test')
 ```
 
-然后安装`lib-zhangbb`, 其他地方可import 静态导入模块
+然后安装`lib-zhangbb-test`, 其他地方可import 静态导入模块
 ```ts
-import { Hamburger } from 'lib-zhangbb';
+import { Hamburger } from 'lib-zhangbb-test';
 ```
