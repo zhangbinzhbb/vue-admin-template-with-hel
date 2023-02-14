@@ -33,6 +33,7 @@
     "hel-lib-proxy": "^3.10.2",
     "hel-micro": "^3.10.6",
     "js-cookie": "2.2.0",
+    "lib-zhangbb": "^1.0.2",
     "lib-zhangbb-test": "^1.0.0",
     "normalize.css": "7.0.0",
     "nprogress": "0.2.0",

@@ -1,17 +1,13 @@
 <template>
   <div id="app">
-    <Hamburger />
     <router-view />
-
   </div>
 </template>
 
 <script>
-import { Hamburger } from 'lib-zhangbb-test'
+// import { Hamburger } from 'lib-zhangbb-test'
+// import { Hamburger } from 'lib-zhangbb'
 export default {
-  name: 'App',
-  components: {
-    Hamburger
-  }
+  name: 'App'
 }
 </script>

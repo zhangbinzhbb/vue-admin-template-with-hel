@@ -10,7 +10,8 @@ async function main() {
   if (isMasterApp()) {
     // from unpkg by default
   // see https://unpkg.com/hel-tpl-remote-vue-comps@1.1.3/hel_dist/index.html
-    await preFetchLib('hel-tpl-remote-vue-comps-demo')
+    // await preFetchLib('lib-zhangbb-test')
+    await preFetchLib('lib-zhangbb')
 
     await import('./loadApp')
   } else {
