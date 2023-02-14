@@ -6,6 +6,7 @@ async function main() {
     await import('./loadApp')
   } else {
     const libProperties = await import('./entrance/libProperties')
+    // 注意此处传递的是 default
     libReady(LIB_NAME, libProperties.default)
   }
 }
