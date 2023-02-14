@@ -1,14 +1,14 @@
 {
-  "name": "lib-zhangbb",
-  "version": "1.0.2",
+  "name": "lib-zhangbb-test",
+  "version": "1.0.0",
   "description": "A vue admin template with Element UI & axios & iconfont & permission control & lint",
   "author": "Pan <panfree23@gmail.com>",
-  "appGroupName": "lib-zhangbb",
+  "appGroupName": "lib-zhangbb-test",
   "main": "hel_proxy/entry.js",
   "module": "hel_proxy_es/entry.js",
-  "types": "src/entrance/libTypes.ts",
+  "types": "src/entrance/libTypes.js",
   "scripts": {
-    "dev": "cross-env PORT=7001 vue-cli-service serve",
+    "dev": "cross-env PORT=7043 vue-cli-service serve",
     "build:prod": "vue-cli-service build",
     "build:stage": "vue-cli-service build --mode staging",
     "preview": "node build/index.js --preview",
@@ -27,6 +27,7 @@
   "dependencies": {
     "axios": "0.18.1",
     "core-js": "3.6.5",
+    "cross-env": "^7.0.3",
     "element-ui": "2.13.2",
     "hel-dev-utils": "^2.3.5",
     "hel-lib-proxy": "^3.10.2",
