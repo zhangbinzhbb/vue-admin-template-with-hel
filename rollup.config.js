@@ -1,14 +1,14 @@
-// import typescript from 'rollup-plugin-typescript'
+import typescript from 'rollup-plugin-typescript'
 import { terser } from 'rollup-plugin-terser'
 import { cst } from 'hel-dev-utils'
 import pkg from './package.json'
 
 const env = process.env.BUILD_ENV || 'umd'
 const plugins = [
-  // typescript({
-  //   exclude: 'node_modules/**',
-  //   typescript: require('typescript')
-  // })
+  typescript({
+    exclude: 'node_modules/**',
+    typescript: require('typescript')
+  })
 ]
 
 const env2outputConf = {
