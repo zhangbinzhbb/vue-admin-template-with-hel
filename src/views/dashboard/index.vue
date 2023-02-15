@@ -16,11 +16,9 @@
 <script>
 import { mapGetters } from 'vuex'
 // import { TestTitle } from 'lib-zhangbb-test'
-import comps1 from 'lib-zhangbb-test'
+// import comps1 from 'lib-zhangbb-test'
 import comps from 'hel-tpl-remote-vue-comps-demo'
 import { preFetchLib } from 'hel-micro'
-console.log('comps1===>', comps1)
-console.log('comps===>', comps)
 export default {
   name: 'Dashboard',
   components: {

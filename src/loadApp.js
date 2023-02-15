@@ -1,6 +1,5 @@
-// import { bindVueRuntime } from 'hel-micro'
 import Vue from 'vue'
-
+import microApp from '@micro-zoe/micro-app'
 import 'normalize.css/normalize.css' // A modern alternative to CSS resets
 
 import ElementUI from 'element-ui'
@@ -36,7 +35,7 @@ Vue.use(ElementUI, { locale })
 
 Vue.config.productionTip = false
 
-// bindVueRuntime({ Vue })
+microApp.start()
 
 new Vue({
   el: '#app',

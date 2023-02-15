@@ -25,6 +25,7 @@
     "build_proxy_es": "cross-env BUILD_ENV=es rollup -c"
   },
   "dependencies": {
+    "@micro-zoe/micro-app": "^0.8.10",
     "axios": "0.18.1",
     "core-js": "3.6.5",
     "cross-env": "^7.0.3",

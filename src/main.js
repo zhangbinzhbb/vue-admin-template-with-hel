@@ -15,7 +15,7 @@ async function main() {
     // await preFetchLib('lib-zhangbb-test', { skip404Sniff: true })
     await preFetchLib('hel-tpl-remote-vue-comps-demo', { skip404Sniff: true })
     // await preFetchLib('lib-zhangbb')
-
+    
     await import('./loadApp')
   } else {
     const libProperties = await import('./entrance/libProperties')
