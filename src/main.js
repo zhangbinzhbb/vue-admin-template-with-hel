@@ -6,6 +6,8 @@ async function main() {
     await import('./loadApp')
   } else {
     const libProperties = await import('./entrance/libProperties')
+
+    console.log("======123=====")
     // 注意此处传递的是 default
     console.log('libProperties.default:', libProperties.default)
     libReady(LIB_NAME, libProperties.default)
