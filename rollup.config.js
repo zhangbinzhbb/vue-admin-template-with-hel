@@ -1,4 +1,4 @@
-// import typescript from 'rollup-plugin-typescript'
+import typescript from 'rollup-plugin-typescript'
 import { terser } from 'rollup-plugin-terser'
 import { cst } from 'hel-dev-utils'
 import pkg from './package.json'
