@@ -26,7 +26,7 @@ export default {
   components: {
     // TestTitle,
     TestTitle: async() => {
-      const comps = await preFetchLib('lib-zhangbb-test')
+      const comps = await preFetchLib('lib-zhangbb-test', { skip404Sniff: true })
       return comps.TestTitle
     },
     // RemoteComp1:  comps1.TestTitle,
