@@ -5,10 +5,10 @@ import pkg from './package.json'
 
 const env = process.env.BUILD_ENV || 'umd'
 const plugins = [
-  // typescript({
-  //   exclude: 'node_modules/**',
-  //   typescript: require('typescript')
-  // })
+  typescript({
+    exclude: 'node_modules/**',
+    typescript: require('typescript')
+  })
 ]
 
 const env2outputConf = {
