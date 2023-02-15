@@ -7,7 +7,10 @@ async function main() {
   } else {
     const libProperties = await import('./entrance/libProperties')
     // 注意此处传递的是 default
+    console.log('libProperties.default:', libProperties.default)
     libReady(LIB_NAME, libProperties.default)
+
+    console.log('libReady:', libReady(LIB_NAME, libProperties.default))
   }
 }
 
