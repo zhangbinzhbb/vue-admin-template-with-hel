@@ -56,11 +56,11 @@ export const constantRoutes = [
   },
   // 👇 非严格匹配，/my-page/* 都指向 MyPage 页面
   {
-    path: '/my-page/*', // vue-router@4.x path的写法为：'/my-page/:page*'
+    path: '/app', // vue-router@4.x path的写法为：'/my-page/:page*'
     component: Layout,
     redirect: '/dashboard',
     children: [{
-      path: 'microApp',
+      path: 'app-vue2/*',
       name: 'MicroApp',
       component: () => import('@/views/microApp/index'),
       meta: { title: 'MicroApp', icon: 'dashboard' }

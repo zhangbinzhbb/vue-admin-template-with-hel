@@ -1,13 +1,14 @@
 <template>
   <div class="dashboard-container">
     <div class="dashboard-text">name: {{ name }}</div>
-    <TestTitle />
 
     <div style="border: 1px solid #ccc;">
       <p>vue 远程组件</p>
       <!-- <HelloRemoteVueComp label="hi remote comp" /> -->
-      <TestTitle />
-      <RemoteComp1 :name="999" />
+      <!-- <TestTitle /> -->
+      <TestTitle :name="999" />
+
+      <RemoteComp1 />
       <RemoteComp name="子应用传入-loaded in codesandbox" />
     </div>
   </div>

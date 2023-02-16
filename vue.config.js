@@ -61,7 +61,7 @@ module.exports = {
     output: {
       jsonpFunction: subApp.jsonpFnName
     },
-    externals: subApp.externals,
+    // externals: subApp.externals,
     resolve: {
       alias: {
         '@': resolve('src')
