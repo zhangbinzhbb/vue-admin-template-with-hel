@@ -61,7 +61,7 @@ module.exports = {
     output: {
       jsonpFunction: subApp.jsonpFnName
     },
-    externals: subApp.externals,
+    externals: subApp.externals, // 本地开发时不设置externals，但是打包时需要设置
     resolve: {
       alias: {
         '@': resolve('src')
