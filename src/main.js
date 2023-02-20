@@ -14,6 +14,7 @@ async function main() {
     // https://github.com/tnfe/hel/issues/23
     // await preFetchLib('lib-zhangbb-test', { skip404Sniff: true })
     await preFetchLib('hel-tpl-remote-vue-comps-demo', { skip404Sniff: true })
+    // await preFetchLib('hel-tpl-l-vue-comps')
     // await preFetchLib('lib-zhangbb')
 
     await import('./loadApp')

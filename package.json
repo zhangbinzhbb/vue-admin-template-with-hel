@@ -33,6 +33,7 @@
     "hel-dev-utils": "^2.3.5",
     "hel-lib-proxy": "^3.10.2",
     "hel-micro": "^3.10.6",
+    "hel-tpl-l-vue-comps": "^1.0.0",
     "hel-tpl-remote-vue-comps-demo": "^0.0.2",
     "js-cookie": "2.2.0",
     "lib-zhangbb": "^1.0.2",

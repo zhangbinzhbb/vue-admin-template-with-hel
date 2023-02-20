@@ -6,9 +6,10 @@
       <p>vue 远程组件</p>
       <!-- <HelloRemoteVueComp label="hi remote comp" /> -->
       <!-- <TestTitle /> -->
-      <TestTitle :name="999" />
+      <TestTitle name="测试123" />
 
-      <RemoteComp1 />
+      <!-- <RemoteComp1 /> -->
+      <Num />
       <RemoteComp name="子应用传入-loaded in codesandbox" />
     </div>
   </div>
@@ -19,6 +20,9 @@ import { mapGetters } from 'vuex'
 // import { TestTitle } from 'lib-zhangbb-test'
 // import comps1 from 'lib-zhangbb-test'
 import comps from 'hel-tpl-remote-vue-comps-demo'
+import comps1 from 'hel-tpl-l-vue-comps'
+// console.log('comps1==>', comps1)
+console.log('comps===>', comps)
 import { preFetchLib } from 'hel-micro'
 export default {
   name: 'Dashboard',
@@ -29,7 +33,8 @@ export default {
       return comps.TestTitle
     },
     // RemoteComp1:  comps1.TestTitle,
-    RemoteComp: comps.HelloWorld
+    RemoteComp: comps.HelloWorld,
+    Num: comps1.Num
   },
   computed: {
     ...mapGetters([
